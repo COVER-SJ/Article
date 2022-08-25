@@ -1,7 +1,14 @@
 # Article
 ## Spring 입문주차 과제
+: 회원가입, 로그인, 댓글 작성/수정/삭제 기능이 추가된 나만의 블로그 백엔드 서버 만들기
 
+## __API 명세서__
+![image](https://user-images.githubusercontent.com/108795153/186638567-b317b62f-6e30-4c51-a38d-ae5bd46a5e95.png)
 
+### __유스케이스 다이어그램__
+![유스케이스 다이어그램](https://user-images.githubusercontent.com/108795153/186639042-6daf4911-3653-4b86-b671-d35bdfebf838.jpg)
+
+___
 
 ### __<요구사항>__
 
