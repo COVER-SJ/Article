@@ -1,4 +1,4 @@
-package com.sparta.article.domain;
+package com.sparta.article.dto;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -1,5 +1,7 @@
 package com.sparta.article.domain;
 
+import com.sparta.article.dto.ArticleRequestDto;
+import com.sparta.article.dto.CommentRequestDto;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -25,6 +27,12 @@ public class Article extends Timestamped { // 생성,수정 시간을 자동으�
     @Column(nullable = false)
     private String password;
 
+    @Column(nullable = false)
+    private String comment;
+
+//    @Column(nullable = false)
+//    private String memoId;
+
     public Article(String username, String title, String contents, String password) {
         this.username = username;
         this.title = title;
@@ -39,8 +47,14 @@ public class Article extends Timestamped { // 생성,수정 시간을 자동으�
         this.password = requestDto.getPassword();
     }
 
-    public void update(ArticleRequestDto requestDto) { // MemoService에서 update에 전달받기로 한게 MemoRequestDto이다.
+    public void update(ArticleRequestDto requestDto) { // ArticleService에서 update에 전달받기로 한게 MemoRequestDto이다.
         this.username = requestDto.getUsername();
         this.contents = requestDto.getContents();
     }
+
+//    public void comment(CommentRequestDto commentRequestDto) {
+//        this.memoId = commentRequestDto.getMemoId();
+//        this.username = commentRequestDto.getUsername();
+//        this.contents = commentRequestDto.getContents();
+//    }
 }

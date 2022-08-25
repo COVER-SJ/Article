@@ -1,9 +1,8 @@
 package com.sparta.article.controller;
 
 import com.sparta.article.domain.Article;
-import com.sparta.article.domain.ArticleRepository;
-import com.sparta.article.domain.ArticleRequestDto;
-import com.sparta.article.service.ArticleService;
+import com.sparta.article.repository.ArticleRepository;
+import com.sparta.article.dto.ArticleRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
