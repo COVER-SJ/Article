@@ -17,7 +17,7 @@ public class UserController {
 
     private final UserService memberService;
 
-    @PostMapping("api/users/signup")
+    @PostMapping("api/user/signup")
     public String signup(@RequestBody @Valid SignupRequestDto signupRequestDto) throws IllegalAccessException {
         return memberService.registerUser(signupRequestDto);
     }
