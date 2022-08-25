@@ -22,7 +22,7 @@ public class UserController {
         return memberService.registerUser(signupRequestDto);
     }
 
-    @PostMapping("api/users/login")
+    @PostMapping("api/user/login")
     public String login(@RequestBody LoginRequestDto loginRequestDto, HttpServletResponse response) {
         return memberService.login(loginRequestDto, response);
     }
