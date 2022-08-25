@@ -17,12 +17,12 @@ public class UserController {
 
     private final UserService memberService;
 
-    @PostMapping("api/user/signup")
+    @PostMapping("api/users/signup")
     public String signup(@RequestBody @Valid SignupRequestDto signupRequestDto) throws IllegalAccessException {
         return memberService.registerUser(signupRequestDto);
     }
 
-    @PostMapping("api/user/login")
+    @PostMapping("api/users/login")
     public String login(@RequestBody LoginRequestDto loginRequestDto, HttpServletResponse response) {
         return memberService.login(loginRequestDto, response);
     }
